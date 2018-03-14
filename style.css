@@ -1,0 +1,278 @@
+/*------------ GENERAL -----------*/
+html{
+  margin:0;
+  border:0;
+  padding:0;
+  height:100%;
+}
+
+body{
+  background:#d2d2d2;
+  font:18px/20px Georgia,San-Serif;
+  color:#e0e0e0;
+  margin:0;
+  right:0;
+  height:100%;
+  position: relative;
+  cursor: default;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  font-size: 22px;
+  color: #d4d0cc;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.section{
+  border: 3px solid #a7a7a7;
+  margin: 258px 26% 90px 26%;
+  padding: 1%;
+  background-color: #3e3e3e;
+}
+
+.section-on-one{
+  border: 1px dotted #ffffff;
+  margin: 185px 24% 70px 24%;
+  width: auto;
+  float: left;
+  padding: 1%;
+  
+}
+
+.section-on-three{
+  width:29%;
+  float:left;
+  margin:2% 2%;
+  text-align: center;
+  color: #333333;
+} 
+
+.section-on-two{
+  width:36%;
+  float:left;
+  margin:2% 7%;
+  text-align: center;
+}
+
+.background{
+    background-color: #e69f6180;
+    border-radius: 5%;
+    height: 400px;
+    padding: 3px;
+    color: #35312d;
+    margin-bottom: 10px;
+}
+
+.clear{
+  clear:both;
+  border-top: 1px solid;
+}
+
+/*------------ FRONT PAGE -----------*/
+.section-one{
+    position: relative;
+    height: 100%; 
+}
+
+.firstview{
+    background: url(images/background.jpg);
+    background-size: cover;
+    background-position: center center; 
+    text-align: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.content{
+    left: 0;
+    right: 0;
+    top: 25%;
+    position: absolute;
+}
+
+.intro{
+    font-size: 86px;
+    font-family: 'Denk One';
+    color: #ff7d19;
+    line-height: normal;
+    margin: 20px;
+    font-weight: 400;
+}
+
+.subintro{
+	font-size: 28px;
+	font-family: 'Century Gothic',Century;
+	color: #ffede5;
+	font-weight: 400;
+}
+
+.drop_down{
+    position: absolute;
+    color: #d4d0cb;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+}
+/*--------------------SLIDE----------------------*/
+.slide-show{
+  margin: 30px auto;
+  max-width: 1250px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition:opacity 2s linear;
+  opacity: 0;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+}
+
+.active-slide{
+    opacity: 1;
+  display:block;
+  position: relative;
+}
+
+.buttons{
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 48%;
+}
+
+.controls{
+    font-size: 25px;
+    cursor: pointer;
+    border: 2px solid #eee;
+    border-radius: 25%;
+}
+
+.controls:hover{
+    background: #333;
+    color: #eee;
+    border: 2px solid #eee;
+    border-radius: 25%;
+}
+
+#previous{
+    margin-left: 10px;
+}
+
+#next{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+
+/*---------------FOOTER----------------*/
+footer{
+  background:#333333;
+  width:100%;
+  overflow: hidden;
+  opacity:0.90;
+}
+
+footer h3{
+ font-size: 23px; 
+ color: #fa7d27;
+}
+
+footer p{
+  font-size: 20px;
+  color:#FFF;
+}
+
+footer p a{
+  color:#FFF;
+  text-decoration: none;
+}
+
+ul.social-media li{
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+ul.social-media li a{
+  border-radius: 100%;
+  border: 4px solid #6b6969;
+  padding: 5px;
+}
+
+.twitter{
+  color:#33CCFF;
+}
+
+.instagram{
+  color:#9c27b0;
+}
+
+.linkedin{
+  color: #0077b5 ;
+}
+
+.google-plus{
+  color: #C63D2D;
+}
+
+.second-footer{
+  border-top: 1px solid #4D4E50;
+  background:#333333;
+  max-height: 50px;
+  text-align: center;
+  opacity: 0.90;
+}
+
+.section-on-three{
+  width:29%;
+  float:left;
+  margin:2% 2%;
+  text-align: center;
+} 
+
+
+/*--------------MEDIA---------------*/
+@media screen and (max-width:800px){
+  body{
+    position: relative;
+  }
+  nav ul,nav:active ul{
+    display: none;
+  }
+  .section-on-two{
+    float: left;
+    width:100%;
+    margin:0;
+    padding: 0;
+  }
+  .section-on-three{
+    float: left;
+    width:100%;
+    margin:0;
+    padding: 0;
+  }
+}
